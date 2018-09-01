@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="Sign In"
+        android:gravity="center"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="400px"
+        android:orientation="vertical">
+        <EditText
+            style="@style/EditText"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:id="@+id/txtemail"/>
+
+        <EditText
+            style="@style/EditText"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/txtpass"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_margin="10px"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"
+            android:onClick="pageDashboard"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="65px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:textSize="26dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#2971de"
+                android:onClick="pageRegister"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="26dp"
+                android:layout_marginRight="10px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_pwd"
+                android:textSize="26dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#2971de"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
